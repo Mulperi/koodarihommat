@@ -5,3 +5,19 @@
 .article__description {
   color: grey;
 }
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+input {
+  background: transparent;
+  border: none;
+  color: white;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
