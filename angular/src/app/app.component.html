@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  Koodarihommat
+</mat-toolbar>
+<div class="app-container">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Suodata" value="" #box (keyup)="onKey(box.value)">
+    </mat-form-field>
+  </form>
+  <div class="article-container" *ngFor="let job of jobsToDisplay">
+    <a [href]="job.link">
+      <h4>{{ job.title }}</h4>
+    </a>
+    <p class="article__description">{{ job.description }}</p>
+  </div>
+</div>

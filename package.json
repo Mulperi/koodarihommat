@@ -1,0 +1,29 @@
+{
+  "name": "tyopaikat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "build": "cd angular && ng build --prod --build-optimizer && cd ..",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "rxjs": "^6.2.1"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.8",
+    "@types/express": "^4.16.0",
+    "@types/request-promise": "^4.1.41",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2"
+  }
+}
