@@ -5,8 +5,16 @@
   background: $salmon;
 }
 
+.articles-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .article-container {
-  padding: 1em 0;
+  padding: 1em;
+  max-width: 480px;
 }
 
 .article__description {

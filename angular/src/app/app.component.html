@@ -9,19 +9,22 @@
   <div class="centered filter">
     <input type="text" placeholder="Suodata..." value="" #box (keyup)="onKey(box.value)">
   </div>
-  <div class="article-container" *ngFor="let job of jobsToDisplay">
-    <mat-card>
-      <a [href]="job.link">
-        <mat-card-title>
-          {{ job.title }}
-        </mat-card-title>
-      </a>
-      <mat-card-content>
-        <p class="article__description">{{ job.description }}</p>
-      </mat-card-content>
-      <mat-card-content>
-        <p class="article__description">{{ job.timestamp }}</p>
-      </mat-card-content>
-    </mat-card>
+  <div class="articles-container">
+    <div class="article-container" *ngFor="let job of jobsToDisplay">
+      <mat-card>
+        <a [href]="job.link">
+          <mat-card-title>
+            {{ job.title }}
+          </mat-card-title>
+        </a>
+        <mat-card-content>
+          <p class="article__description">{{ job.description }}</p>
+        </mat-card-content>
+        <mat-card-content>
+          <p class="article__description">{{ job.timestamp }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
   </div>
 </div>
