@@ -1,20 +1,14 @@
-<header>
-  <mat-toolbar color="primary" class="mat-elevation-z1">
-    <mat-toolbar-row>
-      <span>Koodarihommat</span>
-      <span class="spacer"></span>
-      <span>
-        <input type="text" placeholder="Suodata" value="" #box (keyup)="onKey(box.value)">
-      </span>
-    </mat-toolbar-row>
-  </mat-toolbar>
-</header>
+<div class="topline"></div>
 <div class="app-container">
-  <!-- <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Suodata" value="" #box (keyup)="onKey(box.value)">
-    </mat-form-field>
-  </form> -->
+  <div class="centered">
+    <h1>Koodarihommat</h1>
+    <h4>
+      <cite>Koko maan koodarihommat yhessä paikassa</cite>
+    </h4>
+  </div>
+  <div class="centered filter">
+    <input type="text" placeholder="Suodata..." value="" #box (keyup)="onKey(box.value)">
+  </div>
   <div class="article-container" *ngFor="let job of jobsToDisplay">
     <mat-card>
       <a [href]="job.link">

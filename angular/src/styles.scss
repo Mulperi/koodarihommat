@@ -1,6 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+$mulperi-colormap: (
+  50: hotpink,
+  100: hotpink,
+  200: hotpink,
+  300: hotpink,
+  400: hotpink,
+  500: hotpink,
+  600: hotpink,
+  700: hotpink,
+  800: hotpink,
+  900: hotpink,
+  A100: hotpink,
+  A200: hotpink,
+  A400: hotpink,
+  A700: hotpink,
+  contrast: (
+    50: #fff,
+    100: #fff,
+    200: #fff,
+    300: #fff,
+    400: #fff,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff,
+    A100: #fff,
+    A200: #fff,
+    A400: #fff,
+    A700: #fff
+  )
+);
+
+@import '~@angular/material/theming';
+@include mat-core();
+$my-app-primary: mat-palette($mulperi-colormap);
+$my-app-accent: mat-palette($mat-pink, 500, 900, A100);
+$my-app-warn: mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+@include angular-material-theme($my-app-theme);
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text');
+
+@import 'style-variables';
 
 body,
 html {
@@ -8,7 +52,9 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  background: $paper;
+  color: $brown;
+  font-family: 'Markazi Text', serif;
   margin: 0;
 }
 
@@ -18,5 +64,8 @@ body {
 
 a {
   text-decoration: none;
-  color: hotpink;
+  color: $salmon;
+}
+
+.app-container {
 }

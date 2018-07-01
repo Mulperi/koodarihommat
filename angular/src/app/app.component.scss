@@ -1,3 +1,10 @@
+@import '../style-variables';
+
+.topline {
+  height: 4px;
+  background: $salmon;
+}
+
 .article-container {
   padding: 1em 0;
 }
@@ -6,18 +13,40 @@
   color: grey;
 }
 
-.spacer {
-  flex: 1 1 auto;
+h1 {
+  margin-bottom: 0;
+}
+h4 {
+  margin-top: 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.filter {
+  margin: 2em 0em;
 }
 
 input {
   background: transparent;
-  border: none;
-  color: white;
-  border-bottom: 1px solid white;
+  color: $brown;
+  font-size: 2em;
+  border: 0;
+  border-bottom: 1px solid $brown;
   outline: none;
 }
 
 input::placeholder {
-  color: white;
+  color: $brown;
 }
+
+// .spacer {
+//   flex: 1 1 auto;
+// }
+// header {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 1;
+// }
